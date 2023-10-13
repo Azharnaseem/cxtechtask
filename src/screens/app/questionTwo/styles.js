@@ -9,10 +9,12 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   logoStyle:{
-     width:width(30),
-     height:width(30),
-     backgroundColor:"gray"
+     width:width(20),
+     height:width(20),
   },
+  quesTextStyle:{
+    marginHorizontal:width(2)
+},
   title: {
     color: AppColors.black,
     fontWeight: 'bold',
