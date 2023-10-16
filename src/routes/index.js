@@ -1,19 +1,16 @@
 import * as React from 'react';
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { useSelector } from 'react-redux';
-import { LoginScreen } from '~screens/auth';
 import { HomeScreen, QuestionFive, QuestionFour, QuestionOne, QuestionSix, QuestionThree, QuestionTwo } from '~screens/app';
-import { Loader } from '~components';
+
 import ScreenNames from './routes';
-import { selectIsLogin } from '~redux/slices/authSlice';
-import { ActivityIndicator, View } from 'react-native';
-import styles from '~components/button/styles';
+
 import AppColors from '~utills/AppColors';
+import { View } from 'react-native';
 const Stack = createNativeStackNavigator();
 
 export default function Routes() {
-  const isLogin = useSelector(selectIsLogin)
+ 
   return (
     <NavigationContainer fallback={<View
       style={{
@@ -23,9 +20,9 @@ export default function Routes() {
         backgroundColor: AppColors.white,
       }}
     >
-      <ActivityIndicator size={'large'} color={AppColors.red} />
+     
     </View>}>
-      <Loader />
+       
       {/* {!isLogin ? (
         <Stack.Navigator initialRouteName={ScreenNames.LOGIN} screenOptions={{ header: () => false }}>
           <Stack.Screen name={ScreenNames.LOGIN} component={LoginScreen} />

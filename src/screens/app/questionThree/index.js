@@ -8,19 +8,11 @@ import { Logo } from '~assets/Images';
 export default function QuestionThree({ navigation, route }) {
     
     const array = [3, 7, 1, 5, 11, 19];
-    function sumOfTwoLargestNumbers(arr) {
-        if (arr.length < 2) {
-             
-          return "Array should have at least two numbers";
-        
-        }
-      
-        // Sort the array in descending order
+    function sumOfTwoLargestNumbers(arr) {  
         arr.sort(function(a, b) {
           return b - a;
         });
-      
-        // Sum the two largest numbers
+       
         const sum = arr[0] + arr[1];
         return sum;
       }

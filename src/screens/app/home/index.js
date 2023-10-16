@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, Alert } from 'react-native';
 import { useDispatch } from 'react-redux';
 import { Button, ScreenWrapper } from '~components';
 import { logout } from '~redux/slices/authSlice';
@@ -33,11 +33,11 @@ export default function Home({ navigation, route }) {
                 />
                 <Button
                     title={'Question No 5'}
-                    onPress={() => navigation.navigate(ScreenNames.QUESTIONFIVE)}
+                    onPress={() => Alert.alert("Not Handlde BY Developer")}
                 />
                 <Button
                     title={'Question No 6'}
-                    onPress={() => navigation.navigate(ScreenNames.QUESTIONSIX)}
+                    onPress={() => Alert.alert("Not Handlde BY Developer")}
                 />
             </View>
         </ScreenWrapper>

@@ -9,14 +9,14 @@ export default function QuestionTwo({ navigation, route }) {
     const dispatch = useDispatch();
    
     function isPalindrome(str) {
-        // Remove spaces and convert the string to lowercase for a case-insensitive check
+         
         const cleanedStr = str.toLowerCase().replace(/\s/g, '');
       
-        // Reverse the cleaned string
-        const reversedStr = cleanedStr.split('').reverse().join('');
+        
+        const reverseStr = cleanedStr.split('').reverse().join('');
       
-        // Check if the original string and the reversed string are the same
-        return cleanedStr === reversedStr;
+         
+        return cleanedStr === reverseStr;
       };
       const string1 = "madam";
       const string2 = "doctor";
